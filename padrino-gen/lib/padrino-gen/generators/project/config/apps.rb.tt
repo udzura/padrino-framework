@@ -27,6 +27,7 @@
 #
 Padrino.configure_apps do
   # enable :sessions
+  enable :protection
   set :session_secret, '<%= SecureRandom.hex(32) %>'
 end
 
